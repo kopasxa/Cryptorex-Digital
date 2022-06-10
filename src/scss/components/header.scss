@@ -1,0 +1,50 @@
+@import "../untils/variables.scss";
+
+header {
+    display: flex;
+    justify-content: center;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        display: flex;
+    }
+
+    .menu {
+        width: 390px;
+        &__list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-family: $font-family;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                font-weight: 700;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    transition: .15s linear;
+                    height: 3px;
+                    top: 32px;
+                    background: #FFCB52;
+                    border-radius: 60px;
+                    box-shadow: 0px 0px 15px #ffcb52;
+                }
+
+                &:hover::after {
+                    content: "";
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

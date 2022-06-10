@@ -1,0 +1,78 @@
+#offer {
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    h1, p {
+        font-family: $font-family;
+        color: $text-color;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 800;
+    }
+    p {
+        max-width: 570px;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+
+    img {
+        position: absolute;
+        right: 4%;
+        z-index: -1;
+        width: 35%;
+    }
+}
+
+#guarantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+
+    h1 {
+        color: $text-color;
+        font-size: 48px;
+        font-family: $font-family;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            &__head {
+                margin-bottom: 50px;
+            }
+            &__body {
+                margin-bottom: 30px;
+                h4 {
+                    font-size: 32px;
+                    font-family: $font-family;
+                    color: $text-color;
+                }
+            }
+            &__footer {
+                font-size: 14px;
+                font-family: $font-family;
+                color: $text-color;
+            }
+        }
+    }
+}
