@@ -117,6 +117,10 @@ header .menu__list a:hover::after {
   width: 35%;
 }
 
+#offer picture img {
+  width: 100%;
+}
+
 #guarantee {
   display: -webkit-box;
   display: -ms-flexbox;
