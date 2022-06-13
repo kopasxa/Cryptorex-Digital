@@ -1,61 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/head.html',{
-	"title":"Cryptorex Digital - Главная страница"
-	})
-	<body>
-		@@include('html/header.html',{})
-		<main>
-			<section id="offer">
-				<div class="container">
-					<h1>ТОРГОВЫЙ АЛГОРИТМ</h1>
-					<p>Алгоритм включает в себя 10 высокоэффективных индикаторов с винрейтом 60-70% при 1/3 риска к прибыли. Данная пропорция позволяет пользователям нашего алгоритма выходить в прибыль на дистанции.  </p>
-					<button class="btn btn-radial">Индикаторы</button>
-				</div>
-				<img src="img/main_picture.png" alt="main_picture">
-			</section>
-			<section id="guarantee">
-				<div class="container">
-					<h1>ГАРАНТИРУЕМ</h1>
-					<div class="cards">
-						<div class="card">
-							<div class="card__head">
-								<img src="img/upProfit.png" alt="">
-							</div>
-							<div class="card__body">
-								<h4>Профит</h4>
-							</div>
-							<div class="card__footer">
-								<p>Без прибыли вас не оставим!</p>
-							</div>
+@@include('html/head.html',{
+"title":"Cryptorex Digital - Главная страница"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main>
+		<section id="offer">
+			<div class="container" data-aos="fade-up" data-aos-duration="1000">
+				<h1>ТОРГОВЫЙ АЛГОРИТМ</h1>
+				<p>Алгоритм включает в себя 10 высокоэффективных индикаторов с винрейтом 60-70% при 1/3 риска к прибыли.
+					Данная пропорция позволяет пользователям нашего алгоритма выходить в прибыль на дистанции. </p>
+				<a href="#indicators" class="btn btn-radial">Индикаторы</a>
+			</div>
+			<img src="img/main_picture.png" alt="main_picture">
+		</section>
+		<section id="guarantee">
+			<div class="container">
+				<h1>ГАРАНТИРУЕМ</h1>
+				<div class="cards">
+					<div class="card" data-aos="fade-up" data-aos-duration="500">
+						<div class="card__head">
+							<img src="img/upProfit.png" alt="">
 						</div>
-						<div class="card">
-							<div class="card__head">
-								<img src="img/clock.png" alt="">
-							</div>
-							<div class="card__body">
-								<h4>Окупаемость </h4>
-							</div>
-							<div class="card__footer">
-								<p>Вы гарантированно окупите вложения.</p>
-							</div>
+						<div class="card__body">
+							<h4>Профит</h4>
 						</div>
-						<div class="card">
-							<div class="card__head">
-								<img src="img/security.png" alt="">
-							</div>
-							<div class="card__body">
-								<h4>Безопасность</h4>
-							</div>
-							<div class="card__footer">
-								<p>Ваши API ключи в надёжном месте</p>
-							</div>
+						<div class="card__footer">
+							<p>Без прибыли вас не оставим!</p>
+						</div>
+					</div>
+					<div class="card" data-aos="fade-up" data-aos-duration="1000">
+						<div class="card__head">
+							<img src="img/clock.png" alt="">
+						</div>
+						<div class="card__body">
+							<h4>Окупаемость </h4>
+						</div>
+						<div class="card__footer">
+							<p>Вы гарантированно окупите вложения.</p>
+						</div>
+					</div>
+					<div class="card" data-aos="fade-up" data-aos-duration="1500">
+						<div class="card__head">
+							<img src="img/security.png" alt="">
+						</div>
+						<div class="card__body">
+							<h4>Безопасность</h4>
+						</div>
+						<div class="card__footer">
+							<p>Ваши API ключи в надёжном месте</p>
 						</div>
 					</div>
 				</div>
-			</section>
-		</main>
-		@@include('html/footer.html',{})
-		<script src="js/app.min.js"></script>
-	</body>
+			</div>
+		</section>
+		<section id="our-achiv">
+			<div class="container">
+				<div class="items">
+					<div class="item">
+						<img src="img/api.png" alt="api_filled">
+						<h3>50+</h3>
+						<p>Подключили API</p>
+					</div>
+					<div class="item">
+						<img src="img/people.png" alt="people">
+						<h3>20+</h3>
+						<p>Участников ПАММ счёта</p>
+					</div>
+					<div class="item">
+						<img src="img/trending-up.png" alt="trading_up">
+						<h3>13</h3>
+						<p>Индикаторов</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="indicators">
+			<div class="container">
+				<h1 class="indicator-class">Indicators Class - B</h1>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<p class="indicator-name">B-SCALP 1.0</p>
+							<img src="img/b1.png" alt="b1">
+							<div class="items">
+								<div class="item">
+									<h4>Количество прибыльных</h4>
+									<p>58.57% прибыльных</p>
+								</div>
+								<div class="item">
+									<h4>Фактор прибыльности</h4>
+									<p>сред. 3.400</p>
+								</div>
+								<div class="item">
+									<h4>Сделок за месяц</h4>
+									<p>сред. - 17</p>
+								</div>
+							</div>
+							<button class="btn btn-radial" data-indicator="b1">Подробнее</button>
+						</div>
+						<div class="swiper-slide">
+							<p class="indicator-name">B-SCALP 2.0</p>
+							<img src="img/b2.png" alt="b1">
+							<div class="items">
+								<div class="item">
+									<h4>Количество прибыльных</h4>
+									<p>49.54% прибыльных</p>
+								</div>
+								<div class="item">
+									<h4>Фактор прибыльности</h4>
+									<p>сред. 1.450</p>
+								</div>
+								<div class="item">
+									<h4>Сделок за месяц</h4>
+									<p>сред. - 15</p>
+								</div>
+							</div>
+							<button class="btn btn-radial" data-indicator="b1">Подробнее</button>
+						</div>
+						<div class="swiper-slide">
+							<p class="indicator-name">B-SCALP 3.0</p>
+							<img src="img/b3.png" alt="b1">
+							<div class="items">
+								<div class="item">
+									<h4>Количество прибыльных</h4>
+									<p>52.4% прибыльных</p>
+								</div>
+								<div class="item">
+									<h4>Фактор прибыльности</h4>
+									<p>сред. 1.150</p>
+								</div>
+								<div class="item">
+									<h4>Сделок за месяц</h4>
+									<p>сред. - 25</p>
+								</div>
+							</div>
+							<button class="btn btn-radial" data-indicator="b1">Подробнее</button>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
 </html>

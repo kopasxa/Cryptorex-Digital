@@ -1,5 +1,5 @@
 #offer {
-    height: 90vh;
+    height: 80vh;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -23,6 +23,8 @@
 
     .btn {
         margin-top: 30px;
+        display: inline-flex;
+        text-decoration: none;
     }
 
     picture {
@@ -40,7 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px 0;
+    //height: 60vh;
+    margin: 300px 0 150px;
 
     h1 {
         color: $text-color;
@@ -75,6 +78,118 @@
                 font-size: 14px;
                 font-family: $font-family;
                 color: $text-color;
+            }
+        }
+    }
+}
+
+#our-achiv {
+    display: flex;
+    justify-content: center;
+    padding: 28px 0;
+    background-color: white;
+    .items {
+        display: flex;
+        justify-content: space-between;
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-family: $font-family;
+                font-size: 32px;
+                font-weight: bold;
+                color: black;
+                margin-top: 18px;
+            }
+            p {
+                font-family: $font-family;
+                font-size: 20px;
+                font-weight: 700;
+                color: black;
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+#indicators {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    padding-top: 200px;
+
+    .indicator-class {
+        width: 100%;
+        text-align: center;
+        color: $text-color;
+        font-family: $font-family;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    .mySwiper {
+        .swiper-button-next, .swiper-button-prev {
+            color: white;
+            font-weight: 800;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .indicator-name {
+                margin: 81px 0 52px;
+                font-family: $font-family;
+                color: $text-color;
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            img {
+                margin-bottom: 72px;
+            }
+
+            .items {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .item {
+                    max-width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h4 {
+                        font-family: $font-family;
+                        font-size: 24px;
+                        color: $text-color;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 14px;
+                        font-family: $font-family;
+                        color: white;
+                        text-align: center;
+                        margin-top: 24px;
+                    }
+                }
+            }
+
+            .btn {
+                margin-top: 80px;
+                margin-bottom: 20px;
+                box-shadow: none;
+                transition: .2s ease-in;
+                &:hover {
+                    box-shadow: 0px 0px 15px #FFCB52;
+                    transform: scale(1.05);
+                }
             }
         }
     }

@@ -32,7 +32,7 @@ header {
                     content: "";
                     position: absolute;
                     width: 0%;
-                    transition: .15s linear;
+                    transition: .15s ease-in;
                     height: 3px;
                     top: 32px;
                     background: #FFCB52;
