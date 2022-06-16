@@ -21,12 +21,12 @@ export const html = () => {
 		}))
 		*/
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
-		.pipe(
+		/* .pipe(
 			app.plugins.if(
 				app.isBuild,
 				webpHtmlNosvg()
 			)
-		)
+		) */
 		.pipe(
 			app.plugins.if(
 				app.isBuild,

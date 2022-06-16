@@ -1,6 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 
-flsFunctions.isWebp();
+//flsFunctions.isWebp();
 
 AOS.init();
 

@@ -1,0 +1,102 @@
+@media screen and (min-width: 1440px) {
+    body .container {
+        width: 1320px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        .container {
+            width: 960px;
+        }
+
+        #offer {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background: linear-gradient(294.39deg, #161820 22.75%, #1A1A1A 99.07%) !important;
+
+        .container {
+            width: 720px;
+        }
+        
+        header {
+            .menu {
+                width: 315px;
+                
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        #offer {
+            height: auto;
+            text-align: center;
+            margin-top: 100px;
+            
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 19px;
+                font-weight: 300;
+                max-width: 100%;
+            }
+            .btn {
+                margin-top: 80px;
+            }
+        }
+
+        #guarantee {
+            margin: 130px 0 100px;
+            h1 {
+                font-size: 35px;
+            }
+
+            .cards {
+                .card {
+                    max-width: 190px;
+                    text-align: center;
+                    &__head  img{
+                        width: 65%;
+                    }
+                    &__body {
+                        margin-bottom: 15px;
+                        h4 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            background: url("../img/bg_mobile.png") !important;
+            background-position: center top!important;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            opacity: 0.7 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        .container {
+            width: 540px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body .container {
+        width: 100%;
+    }
+}
