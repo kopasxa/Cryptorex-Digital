@@ -19,7 +19,8 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 document.querySelectorAll("a").forEach(function (item) {
-  if (item.href.startsWith(window.location.protocol + "//" + window.location.host + "/#")) {
+  //console.log(window.location.protocol + "//" + window.location.host + "/#", item.href.includes("#"))
+  if (item.href.includes("#")) {
     item.onclick = function (e) {
       e.preventDefault();
       document.body.style.overflow = "inherit";
