@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 992px) {
     body {
-        background: linear-gradient(294.39deg, #161820 22.75%, #1A1A1A 99.07%) !important;
+        background: #09090A !important;
 
         .container {
             width: 720px;
@@ -77,6 +77,20 @@
             }
         }
 
+        #indicators {
+            .container {
+                width: 95%;
+            }
+
+            .mySwiper {
+                .swiper-slide {
+                    .items {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
         &::after {
             background: url("../img/bg_mobile.png") !important;
             background-position: center top!important;
@@ -92,11 +106,179 @@
         .container {
             width: 540px;
         }
+
+        header {
+            .menu {
+                display: none;
+            }
+
+            .btn {
+                display: none;
+            }
+
+            .burger-icon {
+                display: inline-block;
+            }
+        }
+
+        #guarantee {
+            .cards {
+                .card {
+                    max-width: 110px;
+                    &__head {
+                        margin-bottom: 30px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    &__body {
+                        font-size: 18px;
+                    }
+                    &__footer {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        #our-achiv {
+            .items {
+                align-items: baseline;
+                .item {
+                    img {
+                        width: 50px;
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                        margin-top: 10px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        #indicators {
+            padding-top: 100px;
+
+            .mySwiper {
+                .swiper-slide {
+                    img {
+                        width: 60%;
+                        margin-bottom: 0px;
+                    }
+                    .items {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .item {
+                            margin-top: 35px;
+                            h4 {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .btn {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            .wrapper {
+                .content {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .contact-us {
+                        width: 100%;
+                    }
+                    .social {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+
+        &::after {
+            background-size: 115% !important;
+        }
     }
 }
 
 @media screen and (max-width: 576px) {
-    body .container {
-        width: 100%;
+    body { 
+        .container {
+            width: 100%;
+        }
+
+        #offer {
+            height: 50vh;
+            
+            h1 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .btn {
+                font-size: 16px;
+                margin-top: 80px;
+            }
+        }
+
+        #guarantee {
+            margin-top: 300px;
+            .cards {
+                .card {
+                    margin-top: 80px;
+                    width: 100%;
+                    max-width: 100%;
+                    &__body {
+                        font-size: 22px;
+                    }
+                    &__footer {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        #our-achiv {
+            .items {
+                justify-content: center;
+                .item {
+                    margin: 30px 15px 15px;
+                }
+            }
+        }
+
+        #indicators .indicator-class {
+            font-size: 30px;
+        }
+
+        footer {
+            .wrapper {
+                .content {
+                    text-align: center;
+                    .contact-us h1, .social h1 {
+                        font-size: 25px;
+                    }
+
+                    .contact-us {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            background-size: 150% !important;
+        }
     }
 }

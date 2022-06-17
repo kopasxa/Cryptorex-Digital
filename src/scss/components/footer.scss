@@ -1,0 +1,69 @@
+@import "../untils/variables.scss";
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 87px 0 45px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            .contact-us {
+                width: 60%;
+                h1 {
+                    color: $text-color;
+                    font-family: $font-family;
+                    font-weight: bold;
+                    font-size: 36px;
+                }
+                p {
+                    color: $text-color;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 19px;
+                    margin-top: 40px;
+                }
+            }
+            .social {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    color: $text-color;
+                    font-family: $font-family;
+                    font-weight: bold;
+                    font-size: 36px;
+                }
+
+                .items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .item {
+                        margin-top: 40px;
+                        margin-right: 20px;
+                        a {  
+                            display: flex;
+                            text-decoration: none;
+                            color:white;
+                            transition: .2s all linear;
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            color: $text-color;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 19px;
+            margin-top: 100px;
+            text-align: center;
+        }
+    }
+}
