@@ -97,3 +97,20 @@ window.addEventListener("scroll", function (e) {
 
   //console.log(document.querySelector('#our-achiv').offsetTop - window.innerHeight + document.querySelector('#our-achiv').scrollHeight, window.scrollY)
 });
+
+
+document.querySelectorAll("button[data-indicator]").forEach(function (item) {
+  item.onclick = function (e) {
+    e.preventDefault();
+    document.body.style.overflow = "hidden";
+    document.querySelector("#modal").style.opacity = "1";
+    document.querySelector("#modal").style.zIndex = "999999";
+    console.log(item.attributes["data-indicator"].value)
+  };
+});
+
+document.querySelector("#modal button").onclick = function (e) {
+  document.body.style.overflow = "inherit";
+  document.querySelector("#modal").style.opacity = "0"; 
+  document.querySelector("#modal").style.zIndex = "-99999";
+}

@@ -234,14 +234,21 @@
             margin-top: 300px;
             .cards {
                 .card {
-                    margin-top: 80px;
-                    width: 100%;
-                    max-width: 100%;
-                    &__body {
-                        font-size: 22px;
+                    margin-top: 0px;
+                    width: 28%;
+                    //min-width: 28%;
+                    //max-width: 28%;
+                    //margin: 0 20px;
+                    &__head {
+                        img {
+                            width: 70%;
+                        }
                     }
-                    &__footer {
-                        font-size: 14px;
+                    &__body h4 {
+                        font-size: 15px;
+                    }
+                    &__footer p {
+                        font-size: 10px;
                     }
                 }
             }
@@ -251,13 +258,90 @@
             .items {
                 justify-content: center;
                 .item {
-                    margin: 30px 15px 15px;
+                    text-align: center;
+                    margin: 0 15px 0;
+                    h3 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
 
-        #indicators .indicator-class {
-            font-size: 30px;
+        #indicators { 
+            padding-top: 0px;
+
+            .wrapper-class {
+                margin-top: 100px;
+            }
+
+            .indicator-class {
+                font-size: 30px;
+            }
+
+            .mySwiper {
+                .swiper-slide {
+                    .items {
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        .item {
+                            max-width: 30%;
+                            h4 {
+                                font-size: 12px;
+                            }
+                            p {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                    .btn {
+                        font-size: 15px;
+                        padding: 15px 30px;
+                    }
+                }
+            }
+        }
+
+        #api {
+            //margin-top: 50px;
+            margin-bottom: 200px;
+            display: flex;
+            justify-content: center;
+            font-family: $font-family;
+            color: white;
+            
+            ul {
+                padding: 10px;
+            }
+
+            .wrapper {
+                .head {
+                    h1 {
+                        font-size: 30px;
+                    }
+                
+                    p {
+                        max-width: 90%;
+                    }
+                }
+        
+                .content {
+                    max-width: 90%;
+                    .what-you-get {
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+            
+                    .needed {
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
         }
 
         footer {

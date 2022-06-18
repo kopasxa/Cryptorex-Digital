@@ -437,8 +437,6 @@ footer .wrapper .copyright {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #guarantee .cards .card {
@@ -501,8 +499,6 @@ footer .wrapper .copyright {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #our-achiv .items .item {
@@ -545,7 +541,6 @@ footer .wrapper .copyright {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 200px;
-  padding-top: 200px;
 }
 
 #indicators .wrapper-class {
@@ -654,6 +649,135 @@ footer .wrapper .copyright {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+#api {
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#api .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#api .wrapper .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#api .wrapper .head h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#api .wrapper .head p {
+  font-size: 14px;
+  max-width: 640px;
+  text-align: center;
+}
+
+#api .wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#api .wrapper .content .what-you-get {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#api .wrapper .content .what-you-get h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#api .wrapper .content .what-you-get ul li {
+  margin-top: 7px;
+}
+
+#api .wrapper .content .needed {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#api .wrapper .content .needed h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#api .wrapper .content .needed ul li {
+  margin-top: 20px;
+  max-width: 350px;
+}
+
+#api .wrapper .btn {
+  margin-top: 50px;
+}
+
+#modal {
+  opacity: 0;
+  -webkit-transition: 0.1s all linear;
+  -o-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  color: white;
 }
 
 * {
@@ -972,17 +1096,20 @@ footer {
   }
 
   body #guarantee .cards .card {
-    margin-top: 80px;
-    width: 100%;
-    max-width: 100%;
+    margin-top: 0px;
+    width: 28%;
   }
 
-  body #guarantee .cards .card__body {
-    font-size: 22px;
+  body #guarantee .cards .card__head img {
+    width: 70%;
   }
 
-  body #guarantee .cards .card__footer {
-    font-size: 14px;
+  body #guarantee .cards .card__body h4 {
+    font-size: 15px;
+  }
+
+  body #guarantee .cards .card__footer p {
+    font-size: 10px;
   }
 
   body #our-achiv .items {
@@ -992,11 +1119,89 @@ footer {
   }
 
   body #our-achiv .items .item {
-    margin: 30px 15px 15px;
+    text-align: center;
+    margin: 0 15px 0;
+  }
+
+  body #our-achiv .items .item h3 {
+    font-size: 18px;
+  }
+
+  body #our-achiv .items .item p {
+    font-size: 12px;
+  }
+
+  body #indicators {
+    padding-top: 0px;
+  }
+
+  body #indicators .wrapper-class {
+    margin-top: 100px;
   }
 
   body #indicators .indicator-class {
     font-size: 30px;
+  }
+
+  body #indicators .mySwiper .swiper-slide .items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  body #indicators .mySwiper .swiper-slide .items .item {
+    max-width: 30%;
+  }
+
+  body #indicators .mySwiper .swiper-slide .items .item h4 {
+    font-size: 12px;
+  }
+
+  body #indicators .mySwiper .swiper-slide .items .item p {
+    font-size: 8px;
+  }
+
+  body #indicators .mySwiper .swiper-slide .btn {
+    font-size: 15px;
+    padding: 15px 30px;
+  }
+
+  body #api {
+    margin-bottom: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+
+  body #api ul {
+    padding: 10px;
+  }
+
+  body #api .wrapper .head h1 {
+    font-size: 30px;
+  }
+
+  body #api .wrapper .head p {
+    max-width: 90%;
+  }
+
+  body #api .wrapper .content {
+    max-width: 90%;
+  }
+
+  body #api .wrapper .content .what-you-get h3 {
+    font-size: 17px;
+  }
+
+  body #api .wrapper .content .needed h3 {
+    font-size: 17px;
   }
 
   body footer .wrapper .content {
