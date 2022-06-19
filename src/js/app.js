@@ -99,6 +99,56 @@ window.addEventListener("scroll", function (e) {
 });
 
 
+let cart = {
+  'a1': {
+    'name': 'Indicator A-Scalp (1.0)',
+    'cost': 50,
+    'added': false
+  },
+  'a2': {
+    'name': 'Indicator A-Scalp (2.0)',
+    'cost': 50,
+    'added': false
+  },
+  'a3': {
+    'name': 'Indicator A-Scalp (3.0)',
+    'cost': 50,
+    'added': false
+  },
+  'b1': {
+    'name': 'Indicator B-Scalp (1.0)',
+    'cost': 50,
+    'added': false
+  },
+  'b2': {
+    'name': 'Indicator B-Scalp (2.0)',
+    'cost': 50,
+    'added': false
+  },
+  'b3': {
+    'name': 'Indicator B-Scalp (3.0)',
+    'cost': 50,
+    'added': false
+  },
+  'p1': {
+    'name': 'Indicator P-Scalp (1.0)',
+    'cost': 50,
+    'added': false
+  },
+  'p2': {
+    'name': 'Indicator P-Scalp (2.0)',
+    'cost': 50,
+    'added': false
+  },
+  'p3': {
+    'name': 'Indicator P-Scalp (3.0)',
+    'cost': 50,
+    'added': false
+  },
+}
+
+let summ = 0;
+
 document.querySelectorAll("button[data-indicator]").forEach(function (item) {
   item.onclick = function (e) {
     e.preventDefault();
@@ -109,8 +159,42 @@ document.querySelectorAll("button[data-indicator]").forEach(function (item) {
   };
 });
 
-document.querySelector("#modal button").onclick = function (e) {
-  document.body.style.overflow = "inherit";
-  document.querySelector("#modal").style.opacity = "0"; 
-  document.querySelector("#modal").style.zIndex = "-99999";
-}
+document.querySelectorAll("#modal button").forEach(function (item) {
+  item.onclick = function (e) {
+    if (e.target.dataset.modal == "close") {
+      document.body.style.overflow = "inherit";
+      document.querySelector("#modal").style.opacity = "0"; 
+      document.querySelector("#modal").style.zIndex = "-99999";
+    }
+    else if (e.target.dataset.id) {
+      
+      //console.log(cart[e.target.dataset.id].added);
+    
+      cart[e.target.dataset.id].added = !cart[e.target.dataset.id].added;
+      cart[e.target.dataset.id].added ? summ += cart[e.target.dataset.id].cost : summ -= cart[e.target.dataset.id].cost;
+      e.target.classList.add("added")
+      cart[e.target.dataset.id].added ? e.target.innerHTML = "Добавлено" : e.target.innerHTML = "Добавить"
+    
+      document.querySelector("#modal .result .oplata h2 span").innerHTML = summ + "$";
+     
+      var inned = false;
+      var cart_items = []
+      for (item in cart) {
+        if (cart[item].added) {
+          cart_items.push({"name": cart[item].name, "cost": cart[item].cost})
+          inned = true;
+        }
+      }
+
+      if (!inned) {
+        document.querySelector("#modal .result_ind").innerHTML = "";
+      }
+      else {
+        document.querySelector("#modal .result_ind").innerHTML = "";
+        for (item in cart_items) {
+          document.querySelector("#modal .result_ind").innerHTML += `<div class="indicator_to_buy"><h4>${cart_items[item].name}</h4><p>${cart_items[item].cost}</p></div>`
+        }
+      }
+    }
+  }
+})

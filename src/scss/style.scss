@@ -61,6 +61,13 @@ footer {
 	box-shadow: 0px 0px 15px #FFCB52;
 }
 
+#modal {
+	background: url("../img/bg_modal.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+} 
+
 ::-webkit-scrollbar {
 	width: 7px;
 }

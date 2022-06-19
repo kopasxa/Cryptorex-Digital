@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&_v=20220619001748">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20220619001748" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220619001748"/>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220619001748">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&_v=20220620005300">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20220620005300" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220620005300"/>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220620005300">
 	<title>Cryptorex Digital - Главная страница</title>
 </head>
 
@@ -29,7 +29,7 @@
                         <a href="#indicators">Индикаторы</a>
                     </li>
                     <li class="menu__list_item">
-                        <a href="#">API робот</a>
+                        <a href="#api">API робот</a>
                     </li>
                     <li class="menu__list_item">
                         <a href="#">ПАММ счёт</a>
@@ -367,7 +367,63 @@
 	</main>
 
 	<div id="modal">
-		<button>Close</button>
+		<div class="wrapper">
+			<button data-modal="close"></button>
+			<div class="indicators">
+				<div class="classification">
+					<div class="indicator">
+						<h4>Indicator A-Scalp (1.0)</h4>
+						<button class="add btn btn-radial" data-id="a1">Добавить</button>
+					</div>
+					<div class="indicator">
+						<h4>Indicator A-Scalp (2.0)</h4>
+						<button class="add btn btn-radial" data-id="a2">Добавить</button>
+					</div>
+					<div class="indicator">
+						<h4>Indicator A-Scalp (3.0)</h4>
+						<button class="add btn btn-radial" data-id="a3">Добавить</button>
+					</div>
+				</div>
+				<div class="classification">
+					<div class="indicator">
+						<h4>Indicator B-Scalp (1.0)</h4>
+						<button class="add btn btn-radial" data-id="b1">Добавить</button>
+					</div>
+					<div class="indicator">
+						<h4>Indicator B-Scalp (2.0)</h4>
+						<button class="add btn btn-radial" data-id="b2">Добавить</button>
+					</div>
+					<div class="indicator">
+						<h4>Indicator B-Scalp (3.0)</h4>
+						<button class="add btn btn-radial" data-id="b3">Добавить</button>
+					</div>
+				</div>
+				<div class="classification">
+					<div class="indicator">
+						<h4>Indicator P-Scalp (1.0)</h4>
+						<button class="add btn btn-radial" data-id="p1">Добавить</button>
+					</div>
+					<div class="indicator">
+						<h4>Indicator P-Scalp (2.0)</h4>
+						<button class="add btn btn-radial" data-id="p2">Добавить</button>
+					</div>
+					<div class="indicator">
+						<h4>Indicator P-Scalp (3.0)</h4>
+						<button class="add btn btn-radial" data-id="p3">Добавить</button>
+					</div>
+				</div>
+			</div>
+			<div class="result_ind">
+
+			</div>
+			<div class="result">
+				<div class="oplata">
+					<h2>Всего: <span>0$</span></h2>
+					<button class="btn btn-radial">Оплатить</button>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 
 	<footer>
@@ -405,9 +461,9 @@
     </div>
 </footer>
 
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20220619001748"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20220619001748"></script>
-	<script src="js/app.min.js?_v=20220619001748"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20220620005300"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20220620005300"></script>
+	<script src="js/app.min.js?_v=20220620005300"></script>
 </body>
 
 </html>

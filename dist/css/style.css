@@ -778,6 +778,159 @@ footer .wrapper .copyright {
   top: 0;
   left: 0;
   color: white;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modal button[data-modal] {
+  cursor: pointer;
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  top: 20px;
+  right: 20px;
+}
+
+#modal button[data-modal]:before,
+#modal button[data-modal]:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: gray;
+}
+
+#modal button[data-modal]:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#modal button[data-modal]:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#modal .wrapper {
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+#modal .wrapper .indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 250px;
+  padding: 0 20px 20px;
+}
+
+#modal .wrapper .indicators .classification {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#modal .wrapper .indicators .classification .indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modal .wrapper .indicators .classification .indicator h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+#modal .wrapper .indicators .classification .indicator .btn {
+  font-size: 12px;
+  padding: 11px 30px;
+  display: inline-block;
+}
+
+#modal .wrapper .result_ind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modal .wrapper .result_ind .indicator_to_buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+#modal .wrapper .result_ind .indicator_to_buy p {
+  margin-top: 15px;
+}
+
+#modal .wrapper .result .oplata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
@@ -841,6 +994,13 @@ footer {
   background: radial-gradient(92.49% 137.79% at 5.2% 14.75%, #FFCB52 0%, #FF7B02 100%);
   -webkit-box-shadow: 0px 0px 15px #FFCB52;
           box-shadow: 0px 0px 15px #FFCB52;
+}
+
+#modal {
+  background: url("../img/bg_modal.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 ::-webkit-scrollbar {
